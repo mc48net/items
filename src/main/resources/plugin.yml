@@ -1,0 +1,8 @@
+name: Items
+version: '${version}'
+main: net.mc48.items.Items
+api-version: 1.19
+prefix: [ ITEMS ]
+authors: [ dylansoft ]
+description: Facilitates the easy creation, storage and interactibility of items with NB Tags in a Minecraft Server.
+website: mc48.net
