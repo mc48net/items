@@ -21,12 +21,12 @@ The development branch is currently located at `main`.
 
 ### External software used and credits
   
-[NBT-API](https://github.com/tr7zw/Item-NBT-API) V 2.10.0 under  
-[Shadow](https://github.com/johnrengelman/shadow) v 7.1.2 under  
-[gradle-versioning-plugin](https://github.com/Glovo/gradle-versioning-plugin) V 1.1.10 under  
-[mariadb-java-client](https://mariadb.org) V 3.0.6 under  
-[h2database]() V 2.1.214 under  
-[Paper API](https://github.com/PaperMC/Paper) V 1.19.2-R0.1 under
+[NBT-API](https://github.com/tr7zw/Item-NBT-API) V 2.10.0 
+[Shadow](https://github.com/johnrengelman/shadow) v 7.1.2
+[gradle-versioning-plugin](https://github.com/Glovo/gradle-versioning-plugin) V 1.1.10
+[mariadb-java-client](https://mariadb.org) V 3.0.6
+[h2database]() V 2.1.214
+[Paper API](https://github.com/PaperMC/Paper) V 1.19.2-R0.1
 [ACF]() V 0.5.1
 
 Some modified classes for storage were provided by [BomBardyGamer](https://github.com/bombardygamer)
@@ -38,4 +38,4 @@ Please see CONTRIBUTING.md
   
 ### License
 
-This project uses the (tbd).
+Many files in this project use the Mozilla 2.0 License. Please read the header at the top of a file to see what license it falls under.
