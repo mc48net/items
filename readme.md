@@ -23,8 +23,8 @@ The development branch is currently located at `main`.
 [Shadow](https://github.com/johnrengelman/shadow) v 7.1.2   
 [gradle-versioning-plugin](https://github.com/Glovo/gradle-versioning-plugin) V 1.1.10  
 [mariadb-java-client](https://mariadb.org) V 3.0.6  
-[configurate by spongepowered](https://github.com/SpongePowered/Configurate) V 4.1.2
-[adventure](https://github.com/KyoriPowered/adventure)
+[configurate by spongepowered](https://github.com/SpongePowered/Configurate) V 4.1.2  
+[adventure](https://github.com/KyoriPowered/adventure) V 4.11.0  
 [h2database](https://github.com/h2database/h2database) V 2.1.214  
 [Paper API](https://github.com/PaperMC/Paper) V 1.19.2-R0.1  
 [ACF](https://github.com/aikar/commands) V 0.5.1  
