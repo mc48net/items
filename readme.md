@@ -13,7 +13,7 @@ The `main` branch will almost always contain the most stable code.
 
 ### Versioning
 
-NBTItems follows [semantic versioning](https://semver.org/) (_Major.Minor.Patch_).
+items follows [semantic versioning](https://semver.org/) (_Major.Minor.Patch_).
 
 The development branch is currently located at `main`.
 
