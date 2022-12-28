@@ -1,8 +1,8 @@
-# mb48items
+# items
 
-### What is mb48items?
+### What is items?
 
-mb48items is a plugin that adds configurable NBT items (admin items, quest items, etc.) to a minecraft server.
+items is a plugin that adds configurable NBT items (admin items, quest items, etc.) to a minecraft server.
 
 It is recommended that you do not take source from an unstable branch and compile a build for production use, 
 you should instead use the latest release provided.
