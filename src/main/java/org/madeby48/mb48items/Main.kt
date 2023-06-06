@@ -1,15 +1,36 @@
-package net.mc48.items
+package org.madeby48.mb48items
 
 import co.aikar.commands.PaperCommandManager
+import org.madeby48.mb48items.config.Configuration
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
-import net.mc48.items.utils.FileManager
-import net.mc48.items.utils.Messages
+import org.madeby48.mb48items.utils.FileManager
+import org.madeby48.mb48items.utils.Messages
 import org.bukkit.plugin.java.JavaPlugin
+import org.jetbrains.exposed.sql.Database
 
-class Items : JavaPlugin() {
+/**
+ * The Main class of the plugin.
+ * Authors: madebydylan, BomBardyGamer
+ * Code has been graciously borrowed from the ModRequests plugin by BomBardyGamer.
+ * Props to him for the original code of the entire configuration logic, and database thingamajigs.
+ */
+
+class Main : JavaPlugin() {
 
     lateinit var messageConfig: FileManager
+
+
+    @PublishedApi
+    internal var database: Database? = null
+    private var internalConfig: Configuration? = null
+    val configuration: Configuration
+        get() = checkNotNull(internalConfig) { "Configuration was not initialized properly!" }
+    val itemsManager: ItemsManager = ItemsManager(this)
+    val playerManager: PlayerManager = PlayerManager(this)
+
+    inline fun <T> transaction(crossinline block: () -> T): T =
+        org.jetbrains.exposed.sql.transactions.transaction(database!!) { block() }
 
     override fun onEnable() {
 
@@ -21,6 +42,8 @@ class Items : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
+
+
     }
 
     /** Function that loads / and creates the message config file. */

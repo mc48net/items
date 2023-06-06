@@ -1,8 +1,8 @@
-package net.mc48.items.utils
+package org.madeby48.mb48items.utils
 
 import net.kyori.adventure.audience.Audience
-import net.mc48.items.Items
-import net.mc48.items.Items.Companion.translateColour
+import org.madeby48.mb48items.Main
+import org.madeby48.mb48items.Main.Companion.translateColour
 import java.util.logging.Level
 
 enum class Messages(val priority: Level, val defaultInput: String, val path: String) {
@@ -13,7 +13,7 @@ enum class Messages(val priority: Level, val defaultInput: String, val path: Str
 
     ROOT_DEBUG(Level.INFO, "Debug: %s", "root.debug");
 
-    fun publish(plugin: Items, reciever: Audience, vararg args: Any?){
+    fun publish(plugin: Main, reciever: Audience, vararg args: Any?){
 
         var message = plugin.messageConfig.config.getString(path, defaultInput)
 

@@ -1,4 +1,4 @@
-package net.mc48.items.utils
+package org.madeby48.mb48items.utils
 
 import org.bukkit.inventory.ItemStack
 

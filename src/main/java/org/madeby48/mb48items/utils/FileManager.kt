@@ -1,11 +1,11 @@
-package net.mc48.items.utils
+package org.madeby48.mb48items.utils
 
-import net.mc48.items.Items
+import org.madeby48.mb48items.Main
 import org.bukkit.command.CommandSender
 import org.bukkit.configuration.file.YamlConfiguration
 import java.io.File
 
-class FileManager(private val plugin: Items, private val fileName: String) {
+class FileManager(private val plugin: Main, private val fileName: String) {
 
     val config: YamlConfiguration
     private val file: File
